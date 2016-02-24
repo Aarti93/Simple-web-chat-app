@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Chat</title>
+	<script src="./scripts/chatApp.js"></script>
+	<link rel='shortcut icon' href='../images/favicon.ico' type='image/x-icon'/ >
+</head>
+<link rel="stylesheet" type="text/css" href="./scripts/chatApp.css">
+	
+
+</style>
+<body>
+
+<div id = "page1" style="width:100%">	
+	<div id="registerPage" class="registerPage">
+		<h1>Enter your name to join the chat</h1>
+		<input type="text" id="userName" placeholder="Enter your name" onkeypress="return keyPress(event);"/>
+		<input type="button" id="registerBtn" class="button" value="Join" onClick="registerUser()"/>
+		<div id="error"></div>
+	</div>
+</div>
+	<div id="chatDiv" class="displayNone">	</div>
+	<div class="form">	
+			<input type="text" id="msg" class="displayNone" placeholder="Enter your message" onkeypress="return keyPress(event);"/>
+			<input type="button" id="sendBtn" class="displayNone" value="Send" onClick="sendMsgToServer()"/>	
+	</div>
+</body>
+</html>
